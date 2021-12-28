@@ -43,7 +43,7 @@
   box-sizing: border-box;
 }
 
-.app {
+.App {
   background-color: #3d5864;
   color: #fff2c4;
   min-height: 100vh;
@@ -51,16 +51,53 @@
   font-size: 18px;
 }
 
-.input {
+input {
   padding: 10px;
   background-color: #3d5864;
   color: #fff2c4;
   outline: none;
   border-radius: 5px;
   border: 2px solid #3a4e59;
-  transition: .3s border-color;
+  transition: .2s;
 }
-.input:hover,
-.input:focus {
+
+.text{
+  width: 400px;
+}
+.button_submit{
+  width: 200px;
+  cursor: pointer;
+}
+
+.text:hover,
+.text:focus {
   border-color: #fff2c4;
+}
+
+.button_submit:hover{
+  background-color: #fff2c4;
+  border-color: #3d5864;
+  color: #3d5864;
+}
+
+.human-msg{
+  border: 2px solid white;
+  width: 300px;
+  border-radius: 16px;
+  margin-left: 50%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff2c4;
+  color: #3d5864;
+}
+
+.bot-msg{
+  border: 2px solid white;
+  width: 300px;
+  border-radius: 16px;
+  margin-left: 25%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #3d5864;
+  color: #fff2c4;
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const Form = ({ onAddMessage }) => {
+export const Form = ({ onSubmit }) => {
   const [value, setValue] = useState("");
 
   const handleChange = (e) => {
@@ -11,12 +11,13 @@ export const Form = ({ onAddMessage }) => {
     e.preventDefault();
 
     setValue("");
-    onAddMessage({ text: value, author: "HUMAN" });
+    onSubmit(value);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={value} onChange={handleChange} />
+      <input className="text" type="text" value={value} onChange={handleChange} />
+      <input className="button_submit" type="submit" />
     </form>
   );
 };
